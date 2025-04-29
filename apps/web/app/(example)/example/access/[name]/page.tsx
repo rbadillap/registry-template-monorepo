@@ -5,7 +5,7 @@ import Logo from "@/components/logos"
 import { ValidateLicenseForm } from "@/components/validate-license-form"
 import { toast } from "sonner"
 import { TerminalCommandCopy } from "@/components/terminal-command-copy"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@workspace/ui/components/badge"
 import { Check, Copy } from "lucide-react"
 
 function DemoDescription() {

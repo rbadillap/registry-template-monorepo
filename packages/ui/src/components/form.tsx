@@ -16,7 +16,7 @@ import {
 import { cn } from "@workspace/ui/lib/utils"
 import { Label } from "@workspace/ui/components/label"
 
-const Form: typeof FormProvider = FormProvider
+const Form = FormProvider
 
 type FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
@@ -37,7 +37,6 @@ const FormField = <
 }: ControllerProps<TFieldValues, TName>) => {
   return (
     <FormFieldContext.Provider value={{ name: props.name }}>
-      {/* @ts-expect-error - Type mismatch is expected */}
       <Controller {...props} />
     </FormFieldContext.Provider>
   )

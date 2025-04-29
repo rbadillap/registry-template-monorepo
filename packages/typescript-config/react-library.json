@@ -4,5 +4,8 @@
   "extends": "./base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
+  },
+  "paths": {
+    "react": ["node_modules/@types/react"]
   }
 }

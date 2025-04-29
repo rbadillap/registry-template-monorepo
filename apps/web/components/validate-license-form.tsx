@@ -36,10 +36,10 @@ interface ValidateLicenseFormProps {
   logo?: React.ReactNode
   className?: string
   onSubmit: (data: ValidateFormData) => void | Promise<void>
-  // description?: React.ReactNode
+  description?: React.JSX.Element
 }
 
-export function ValidateLicenseForm({ logo, className, onSubmit }: ValidateLicenseFormProps) {
+export function ValidateLicenseForm({ logo, className, onSubmit, description }: ValidateLicenseFormProps) {
   const [showKey, setShowKey] = React.useState(false)
   const form = useForm<ValidateFormData>({
     resolver: zodResolver(validateSchema),
@@ -57,7 +57,7 @@ export function ValidateLicenseForm({ logo, className, onSubmit }: ValidateLicen
           )}
           <CardTitle className="text-xl font-semibold text-center tracking-tight">Enter your key</CardTitle>
           <CardDescription className="text-center text-muted-foreground text-sm">
-            {/* {description} */}
+            {description}
           </CardDescription>
         </CardHeader>
         <CardContent className="pt-4">
