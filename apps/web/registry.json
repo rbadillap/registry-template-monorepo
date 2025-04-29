@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "items": [
+    {
+      "name": "logo",
+      "type": "registry:component",
+      "title": "Logo",
+      "description": "The Zeta logo component",
+      "files": [
+        {
+          "path": "registry/new-york/logos/zeta.tsx",
+          "type": "registry:component",
+          "target": "components/logos/zeta.tsx"
+        }
+      ]
+    }
+  ]
+}
